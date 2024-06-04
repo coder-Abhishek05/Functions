@@ -1,0 +1,105 @@
+Q1--------------------------------------------------->
+
+#include <iostream> 
+using namespace std;
+
+void square(int num){
+    for (int i=1 ; i<= num ; i++){
+        cout << i*i << " " ;
+    }
+}
+
+int main(){
+    int n;
+    cout << "Enter the number : ";
+    cin >> n ;
+    square(n);
+
+}
+
+
+Q2---------------------------------------------->
+
+#include <iostream> 
+using namespace std;
+
+float area(int radius){
+    return (3.14*radius*radius);
+}
+
+int main(){
+    int n;
+    cout << "Enter the radius : ";
+    cin >> n ;
+    cout << area(n);
+}
+
+Q3------------------------------------------------->
+
+#include <iostream> 
+using namespace std;
+
+void odd(int a , int b){
+    if (a > b){
+        int i= b+1;
+        while (a>i){
+            if (i % 2 != 0){
+                cout<< i <<" ";
+            }
+            i++;
+        }
+    }
+    else{
+        int i= a+1;
+        while (b>i){
+            if (i % 2 != 0){
+                cout<< i << " ";
+            }
+            i++;
+        }
+    }
+    
+}
+
+int main(){
+    int n1 , n2;
+    cout << "Enter the first n1 and then n2: ";
+    cin >> n1 >> n2;
+    odd(n1 , n2);
+}
+
+
+Q4------------------------------------------------------->
+
+#include <iostream> 
+using namespace std;
+
+int number_of_digit(int num){
+    int count = 0;
+    while (num> 0 ){
+        count++;
+        num = num /10;
+    }
+    return count ;
+}
+
+int main(){
+    int n;
+    cout << "Enter the number : ";
+    cin >> n ;
+    cout << "The number of digits in the no. is :" << number_of_digit(n) << endl;
+    cout << "The square of the number is :" << n*n << endl ;
+}
+
+Q5------------------------------------------------------------>
+
+Infinite
+
+Q6----------------------------------------------------------->
+
+True
+False
+
+Q7--------------------------------------------------------------->
+
+No it is not possible .
